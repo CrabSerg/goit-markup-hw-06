@@ -892,7 +892,7 @@ padding: 0px 39px 20px 41px;
 }
 
 .modal-txt {
-padding: 40px 39px 12px 41px;
+padding: 40px 40px 12px 40px;
 margin: 0;
 font-weight: 700;
 font-size: 20px;
@@ -1055,4 +1055,8 @@ padding: 0;
 clip: rect(0 0 0 0);
 clip-path: inset(50%);
 margin: -1px;
+}
+
+.pollicy-div {
+margin-bottom: 20px;
 }
