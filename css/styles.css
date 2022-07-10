@@ -856,25 +856,34 @@ border: 1px solid rgba(0, 0, 0, 0.1);
 
 transform: translate(0%, 0%);
 cursor: pointer;
+transition: fill var(--anim);
+}
+
+.modal-close-btn:hover,
+.modal-close-btn:focus {
+fill: var(--accent-color);
+transition: fill var(--anim);
 }
 
 textarea {
 resize: none;
 }
-
-.form-modal-input:focus {
+.form-modal-input {
+transition: fill var(--anim);
+transition: border-color var(--anim);
+}
+.form-modal-input:focus,
+.form-modal-input:hover {
 border-color: var(--accent-color-bg);
-
+transition: border-color var(--anim);
 }
 
-.form-modal-input:focus + svg {
+.form-modal-input:focus + svg,
+.form-modal-input:hover + svg {
 fill: var(--accent-color);
+transition: fill var(--anim);
 }
 
-
-.form-div .use-icon-mailbc:focus {
-fill: var(--accent-color-bg);
-}
 
 .form-list {
 padding: 0px 39px 20px 41px;
