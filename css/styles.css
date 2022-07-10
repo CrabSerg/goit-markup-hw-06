@@ -862,15 +862,9 @@ textarea {
 resize: none;
 }
 
-.form-modal-input:focus,
-.form-modal-input:focus-visible {
+.form-modal-input:focus {
 border-color: var(--accent-color-bg);
 
-}
-
-.form-modal-input .use-icon-man:focus, 
-.form-modal-input .use-icon-man:focus-visible {
-fill: red;
 }
 
 .form-div .use-icon-mailbc:focus {
