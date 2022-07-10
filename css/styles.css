@@ -599,9 +599,9 @@ letter-spacing: 0.03em;
 color: rgba(255, 255, 255, 0.6);
 }
 
-:focus,
-:focus-visible {
-color: #2196F3;
+.form-footer-input:focus,
+.form-footer-input:focus-visible {
+border-color: var(--accent-color);
 }
 
 .label-footer {
@@ -848,7 +848,7 @@ justify-content: center;
 width: 30px;
 height: 30px;
   
-background: #FFFFFF;
+background: --;
 border: none;
 padding: 0;
 border-radius: 30px;
@@ -862,8 +862,15 @@ textarea {
 resize: none;
 }
 
-.form-modal {
+.form-modal__form-label:focus-within>.form-modal__icon,
+.form-modal__form-label:hover>.form-modal__icon {
+fill: var(--accent-color);
+}
 
+
+.form-modal-input:focus,
+.form-modal-input:focus-visible {
+border-color: var(--accent-color-bg);
 }
 
 .form-list {
@@ -884,12 +891,25 @@ color: #212121;
 
 .form-span {
 display: flex;
+
+margin-bottom: 4px;
+font-weight: 400;
+font-size: 12px;
+line-height: 14px;
+
+letter-spacing: 0.01em;
+color: var(--grey-color);
 }
 .form-span-comment {
 display: flex;
 }
 .form-div {
+position: relative;
 display: flex;
+}
+.svg-modal {
+position: absolute;
+margin: 11px 12px;
 }
 
 .form-div input  {
@@ -902,14 +922,18 @@ border: 1px solid rgba(33, 33, 33, 0.2);
 border-radius: 4px;
 
 outline: transparent;
+padding-left: 42px;
+margin-bottom: 10px;
 }
 
-input:focus,
-input:focus-visible {
-border-color: var(--accent-color);
+.use-icon-man {
+transform: translate(12%, 12%);
 }
 
-/* transition-property: color, background-color, box-shadow, transform;
-transition-duration: 250ms;
-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); */
+.use-icon-handset {
+transform: translate(13%, 13%);
+}
 
+.use-icon-mailbc {
+transform: translate(15%, 12%);
+}
