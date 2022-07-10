@@ -862,15 +862,19 @@ textarea {
 resize: none;
 }
 
-.form-modal__form-label:focus-within>.form-modal__icon,
-.form-modal__form-label:hover>.form-modal__icon {
-fill: var(--accent-color);
-}
-
-
 .form-modal-input:focus,
 .form-modal-input:focus-visible {
 border-color: var(--accent-color-bg);
+
+}
+
+.form-modal-input .use-icon-man:focus, 
+.form-modal-input .use-icon-man:focus-visible {
+fill: red;
+}
+
+.form-div .use-icon-mailbc:focus {
+fill: var(--accent-color-bg);
 }
 
 .form-list {
@@ -1003,3 +1007,5 @@ transition: background-color var(--anim), box-shadow var(--anim), border-radius 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
 }
+
+ 
