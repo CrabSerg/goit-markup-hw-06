@@ -867,6 +867,11 @@ border-color: var(--accent-color-bg);
 
 }
 
+.form-modal-input:focus + svg {
+fill: var(--accent-color);
+}
+
+
 .form-div .use-icon-mailbc:focus {
 fill: var(--accent-color-bg);
 }
